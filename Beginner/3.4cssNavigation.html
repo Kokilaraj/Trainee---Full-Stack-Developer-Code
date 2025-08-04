@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul{
+            list-style-type:none;
+            padding: 0;
+            margin:0;
+            overflow: hidden;
+            background-color: #666;
+        }
+        li{
+            float: left;
+            /*this property and value present list in horizontal and also display: inline; property and value can be used */
+        }
+        li a{
+            display:block;
+            color:white;
+            padding: 13px 15px;
+            text-align: center;
+            text-decoration:none;
+        }
+        li a:hover:not(.active){
+            background-color: #112;
+        }
+        .active{
+            background-color: #03AA6D;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="home">home</a></li>
+        <li><a href="about">about</a></li>
+        <li><a href="contact">contact</a></li>
+    </ul>
+</body>
+</html>

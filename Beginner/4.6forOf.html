@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        const animal = ['dog', 'cat', 'parrot'];
+        let text='';
+        for (let x of animal){
+            text += x;//shouldn't mention variable name (array name) in "for of loop"
+            document.write(text+"<br/>");
+            //in the end value of for of x is dogcatparrot. Because it throlugh values so adds values to text and itself too
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="popAlert('hello i am alice')">Alice</button>
+    <button onclick="popAlert('hello i am bob')">bob</button>
+    <button onclick="popAlert('hello i am peter')">peter</button>
+    <script>
+        function popAlert(anytext){//JS is a dynamically typed language. so no need to declare data type(int,double,etc.).
+        //JS interpreter in the browser checks the data types during the runtime 
+            alert(anytext); // alert() is a predefined function provided by the window object
+        }
+    </script>
+</body>
+</html>

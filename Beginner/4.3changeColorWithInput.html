@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        p{font-size:30px;
+        font-weight:bold;}
+    </style>
+</head>
+<body>
+    <p id="pid">change my color</p>
+    <form>
+        <label>Enter a color</label>
+        <input type="text" id="inputid">
+        <input type="button" onclick="changeColor()" value="change">
+    </form>
+    <script>
+        function changeColor(){
+            var input=document.getElementById("inputid");
+            var para=document.getElementById("pid");
+            para.style.color=input.value;
+        }
+    </script>
+</body>
+</html>

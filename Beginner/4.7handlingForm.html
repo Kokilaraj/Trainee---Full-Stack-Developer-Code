@@ -1,0 +1,61 @@
+<html>  
+<head>  
+<title> Login Form</title>  
+</head>  
+<body>  
+<h3> LOGIN </h3>  
+<form id="Login_form" onsubmit="submitForm()">  
+<h4> USERNAME</h4>  
+<input type="text" id="uemail"  placeholder="Enter your email id"/>  
+<h4> PASSWORD</h4>  
+<input type="password" id="upassword" placeholder="Enter your password"/></br></br>  
+<input type="submit" value="Login"/>  
+<input type="button" value="SignUp" onClick="create()"/>  
+</form> 
+<script>
+    
+function submitForm(){
+    const email=document.getElementById('uemail').value;
+    const password=document.getElementById('upassword').value;
+   function validateEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+if (validateEmail(email)) {
+  alert("Valid email address!");
+} else {
+  alert("Invalid email address!");
+}
+function validatePassword(password) {
+  const minLength = 8;
+  const hasUppercase = /[A-Z]/.test(password);
+  const hasLowercase = /[a-z]/.test(password);
+  const hasNumber = /\d/.test(password);
+  const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+  if (password.length < minLength) {
+    return "Password must be at least 8 characters long.";
+  }
+  if (!hasUppercase) {
+    return "Password must include at least one uppercase letter.";
+  }
+  if (!hasLowercase) {
+    return "Password must include at least one lowercase letter.";
+  }
+  if (!hasNumber) {
+    return "Password must include at least one number.";
+  }
+  if (!hasSpecialChar) {
+    return "Password must include at least one special character.";
+  }
+  return "Password is valid!";
+}
+alert(validatePassword(password));
+}
+
+function create(){
+    
+}
+</script>
+</body> 
+</html>  

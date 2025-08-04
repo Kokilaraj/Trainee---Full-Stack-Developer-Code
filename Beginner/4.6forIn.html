@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers = [5, 84, 33, 59, 21];
+        let txt="";
+        for (let x in numbers){// loop first add value to txt then add next values to txt with exiting values
+//"txt = numbers[x];" in this block of code loop first add value to txt then add next values to txt by deleting exist values
+            txt += numbers[x]; //should mention object name (array name) in 'for in loop'
+            document.write(txt+"<br/>");
+            //in the end value of for in x is 4. Because it through properties so adds values to txt
+            }
+    </script>
+</body>
+</html>
