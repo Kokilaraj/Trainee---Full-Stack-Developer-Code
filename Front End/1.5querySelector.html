@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('[title = "mytitle"]').append('jQuery Selectors');
+        $('[class="mycls1"]').css('background-color', 'yellow');
+        // $('[class]').css('background-color', 'yellow');
+      });
+    </script>
+  </head>
+  <body>
+    <h1 title="mytitle"></h1>
+    <div class="mycls1">
+      <p>Hello, We have learnt selectors</p>
+    </div>
+
+    <p id="impPrg" class="boldPrg"></p>
+
+    <div class="mycls2">
+      <p id="newid">Congratulations !! Now you know selectors.</p>
+    </div>
+  </body>
 </html>
