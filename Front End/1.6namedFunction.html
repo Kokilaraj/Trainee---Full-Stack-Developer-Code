@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        function clicked(){
+        $(this).css('background-color', 'yellow');
+      } 
+      $(document).ready(function () {
+        $('p').on('click ', clicked);
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <p>This paragraph is inside a div tage</p>
+    </div>
+    <p>If your click on me, I will change my color.</p>
+    <p>I will change my color too if you click on me !</p>
+  </body>
+</html>

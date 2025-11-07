@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('p').on({
+          click: function () {
+          $(this).text('learn vanilla js');},
+          dblclick: function(){
+            $(this).css('background-color', 'yellow');}
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>If your click/double click on me, I will change my color.</p>
+    <p>If your click/double click on me, I will change my color.</p>
+  </body>
+</html>

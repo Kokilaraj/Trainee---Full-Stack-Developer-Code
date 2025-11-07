@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('p').on('mouseenter', function () {
+          $(this).css('background-color', 'pink');
+        });
+        $("#bId").on("click", function(){
+          $(this).hide();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>If your mouse enters to me, I will change my color.</p>
+
+    <button id="bId">Click Me</button>
+  </body>
+</html>
